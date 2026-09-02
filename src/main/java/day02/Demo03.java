@@ -8,6 +8,8 @@ public class Demo03 {
                 count++;
                 System.out.println(i);
         }
+
     }
+        System.out.println(count);
 }
 }
