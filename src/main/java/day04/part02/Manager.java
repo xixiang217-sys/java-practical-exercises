@@ -1,15 +1,15 @@
-package day04;
+package day04.part02;
 
 public class Manager {
     private String name;
     private  int id;
-    private  double salar;
+    private  double salary;
     private  double bonus;
 
-    public Manager(String name, int id, double salar, double bonus) {
+    public Manager(String name, int id, double salary, double bonus) {
         this.name = name;
         this.id = id;
-        this.salar = salar;
+        this.salary = salary;
         this.bonus = bonus;
     }
 
@@ -29,12 +29,12 @@ public class Manager {
         this.id = id;
     }
 
-    public double getSalar() {
-        return salar;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setSalar(double salar) {
-        this.salar = salar;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public double getBonus() {
