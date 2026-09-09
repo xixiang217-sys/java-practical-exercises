@@ -24,6 +24,7 @@ public class TestAnimal {
         bird.eat("虫子");
         bird.sound();
         bird.fly();
+
     }
 
 }

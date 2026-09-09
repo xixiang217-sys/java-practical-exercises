@@ -2,6 +2,7 @@ package day05.part01;
 
 public class Test {
     public static void main(String[] args) {
+
         Student student=new Student();
         student.study();
         Teacher teacher=new Teacher();
