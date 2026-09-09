@@ -46,11 +46,11 @@ public final class Bus extends Car{
 
     @Override
     public void show(){
-        System.out.println(this.passenger);
-        System.out.println(this.endTiem);
-        System.out.println(this.starTime);
-        System.out.println(super.getColor());
-        System.out.println(super.getTyres());
+        System.out.println(passenger);
+        System.out.println(endTiem);
+        System.out.println(starTime);
+        System.out.println(getColor());
+        System.out.println(getTyres());
     }
     public void function(){
         if (getPassenger()>50){
@@ -69,3 +69,5 @@ public final class Bus extends Car{
 //ii.带参数构造方法，给属性赋值为参数值
 //iii.重写父类中的抽象方法，显示该类所具备的所有属性值
 //iv.function()方法：根据汽车的核载量描述该汽车的功能，当核载量大于50人时，输出“这是一辆大汽车，可以用作公交车”，否则，输出“这是一辆小汽车，可以用作班车”
+
+
