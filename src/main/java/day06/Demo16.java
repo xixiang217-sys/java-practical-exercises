@@ -13,7 +13,6 @@ public class Demo16 {
         System.out.println(str);
         Date parsed = sdf.parse("2026-09-10 14:30:00");
         System.out.println(parsed);
-
     }
 }
 ////////////////代码题16：日期格式化与解析
