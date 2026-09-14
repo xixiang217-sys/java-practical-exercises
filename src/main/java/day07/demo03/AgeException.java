@@ -1,6 +1,6 @@
 package day07.demo03;
 
-public class AgeException extends Exception{
+public class AgeException extends Exception {
     public AgeException() {
     }
 

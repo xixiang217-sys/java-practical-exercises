@@ -2,7 +2,7 @@ package day07.demo06;
 
 public class Student {
     private String name;
-    private  int age;
+    private int age;
 
     public String getName() {
         return name;
