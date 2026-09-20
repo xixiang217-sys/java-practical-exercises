@@ -1,4 +1,5 @@
 target/
+target_check/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
