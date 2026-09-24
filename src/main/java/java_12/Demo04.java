@@ -10,11 +10,7 @@ public class Demo04 {
     public static void main(String[] args) {
 
         List<String>list=new ArrayList<>(Arrays.asList("d","d","d","d","deee","ddef"));
-
-
         List<String> collect = list.stream().filter(a -> a.length() > 3).collect(Collectors.toList());
-
-
     }
 }
 ////4. List，使用Stream过滤出长度大于3的字符串，收集成新List。
