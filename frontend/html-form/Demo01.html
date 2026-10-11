@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 30%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="www.xiaomi.com" method="get" name="mesg">
+        <h1>注册信息</h1>
+        <table width="100" height="420">
+            <tr>
+                <td width="30" height="30" bgcolor="lightgray">
+                    用户名
+                </td>
+                <td width="70" height="30">
+                    <input type="text" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td width="30" height="30" bgcolor="lightgray">
+                    <p>密码</p>
+                </td>
+                <td width="70" height="30">
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td width="30" height="30" bgcolor="lightgray">
+                    性别
+                </td>
+                <td width="70" height="30">
+                    <input type="radio" value="男" name="sex">男
+                    <input type="radio" value="女" name="sex" checked>女
+                </td>
+            </tr>
+            <tr>
+              <td width="30" height="30" bgcolor="lightgray">
+                    爱好
+                </td>
+                <td width="70" height="30">
+                    <input type="checkbox" name="爱好" value="篮球">篮球
+                    <input type="checkbox" name="爱好" value="足球" checked>足球
+                    <input type="checkbox" name="爱好" value="网球" checked>网球
+                </td>
+            </tr>
+            <tr>
+              <td width="30" height="30" bgcolor="lightgray">
+                    验证码
+                </td>
+                <td width="70" height="30">
+                    <input type="text" name="验证码">
+                    <input type="button" value="获取验证码">
+
+                </td>
+            </tr>
+            <tr>
+              <td width="30" height="30" bgcolor="lightgray">
+                    选择班级
+                </td>
+                <td width="70" height="30">
+                    <select name="班级">
+                        <option value="java">Java班</option>
+                        <option value="C语音">C语音班</option>
+                        <option value="C++">C++班</option>
+                    </select>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6" bgcolor="lightgray">
+                    个人简介
+                </td>
+                <td rowspan="6" height="180">
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+               <td width="30" height="30" bgcolor="lightgray">
+                    上传附件
+                </td>
+                <td width="70" height="30">
+                    <input type="file" name="选择文件">
+                </td>
+            </tr>
+            <tr>
+                <td width="30" height="30"></td>
+                <td width="70" height="30">
+                    <input type="submit" value="提交注册信息">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
