@@ -1,0 +1,91 @@
+
+.p1 {
+    width: 40%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+.p2 {
+    font-size: x-large;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+}
+
+.p3 {
+    height: 30px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    padding: 0;
+}
+.p4 {
+    height: 800px;
+    width: 100%;
+    background-image: url(./菲比.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+hr {
+    border: none;
+    height:1px;
+    background-color: #000;
+    margin-bottom:20px; 
+}
+
+.p5 {
+    height: 30px;
+    font-size:small ;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p6 {
+    text-indent: 2em;
+    height: 150px;
+    padding:20px 50px;
+}
+
+.p7 {
+    height: 120 ;
+    border: 1px black solid;
+    padding: 0px 20px;
+    margin: 20px 50px;
+
+}
+
+.p8{
+    margin:0; /* 清除p默认外边距！！重点 */
+    text-align:right; /* 文字右对齐，模拟右下角 */
+    font-size:small;
+    color: gray;
+}
+
+.p9 {
+    margin: 20px 30px;
+    height: 20px;
+    padding: 0px 20px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.p22 {
+    background-color: aqua;
+    height: 20px;
+    padding: 10px 80px;
+    margin: 10px 50px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
