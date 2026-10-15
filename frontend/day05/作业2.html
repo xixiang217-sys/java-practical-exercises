@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb2{
+             margin: 0 auto;
+           
+          
+        
+        }
+        .td2 {
+               height: 40px;
+            width: 200px;
+          
+
+        }
+      
+    
+        .tb1 {
+            margin: 0 auto;
+            border: 1px solid black;
+           
+        }
+        .td1 {
+            height: 100px;
+            width: 400px;
+            text-align: center;
+           
+           
+        }
+        .sz {
+             height: 40px;
+            width: 200px;
+             background-color: rgb(226, 238, 238);
+
+        }
+        #color1 {
+               height: 40px;
+            width: 300px;
+        }
+         #color2 {
+           height: 40px;
+            width: 300px;
+        }
+         #color3 {
+             height: 40px;
+            width: 300px;
+        }
+         #color4 {
+              height: 40px;
+            width: 300px;
+        }
+         #color5 {
+              height: 40px;
+            width: 300px;
+        }
+         #color6{
+            height: 40px;
+            width: 300px;
+        }
+         #color7{
+             height: 40px;
+            width: 300px;
+        }
+         #color8 {
+             height: 40px;
+            width: 300px;
+        }
+         #color9 {
+            height: 40px;
+            width: 300px;
+        }
+         #color10{
+               height: 40px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <table class="tb1">
+        <tr>
+            <td class="td1">
+                <input type="text" id="color1">
+
+            </td>
+             <td class="td1">
+                <input type="text" id="color2">
+
+             </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <input type="text" id="color3">
+            </td>
+             <td class="td1">
+                <input type="text" id="color4">
+             </td>
+        </tr>
+        <tr>
+             <td class="td1">
+                <input type="text" id="color5">
+             </td>
+             <td class="td1">
+                <input type="text" id="color6">
+             </td>
+        </tr>
+        <tr>
+             <td class="td1">
+                <input type="text" id="color7">
+             </td>
+             <td class="td1">
+                <input type="text" id="color8">
+             </td>
+        </tr>
+        <tr>
+             <td class="td1">
+                <input type="text" id="color9">
+             </td>
+             <td class="td1">
+                <input type="text" id="color10">
+             </td>
+        </tr>
+    </table>
+    <table class="tb2">
+        <tr>
+            <td class="td2">
+                <input type="button" class="sz" id="sz1" value="设置颜色">
+            </td>
+            <td class="td2">
+                <input type="button" class="sz" id="sz2" value="显示颜色">
+            </td>
+            <td class="td2">
+                <input type="button" class="sz" id="sz3" value="颜色排序">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var c1=document.getElementById("color1");
+        var c2=document.getElementById("color2");
+        var c3=document.getElementById("color3");
+        var c4=document.getElementById("color4");
+        var c5=document.getElementById("color5");
+        var c6=document.getElementById("color6");
+        var c7=document.getElementById("color7");
+        var c8=document.getElementById("color8");
+        var c9=document.getElementById("color9");
+        var c10=document.getElementById("color10");
+
+       var arr = [];
+        c1.oninput=function(){
+            arr[0]=this.value;
+        }
+         c2.oninput=function(){
+            arr[1]=this.value;
+        }
+         c3.oninput=function(){
+            arr[2]=this.value;
+        }
+         c4.oninput=function(){
+            arr[3]=this.value;
+        }
+         c5.oninput=function(){
+            arr[4]=this.value;
+        }
+         c6.oninput=function(){
+            arr[5]=this.value;
+        }
+         c7.oninput=function(){
+            arr[6]=this.value;
+        }
+         c8.oninput=function(){
+            arr[7]=this.value;
+        }
+         c9.oninput=function(){
+            arr[8]=this.value;
+        }
+         c10.oninput=function(){
+            arr[9]=this.value;
+        }
+
+        var s2=document.getElementById("sz2");
+        s2.onclick=function(){
+            var str="";
+            for(var i=0;i<arr.length;i++){
+             str=str+arr[i];
+             if(arr[i]){
+                str=str+"&";
+             }
+             
+        }
+        
+        }
+
+
+        
+        
+        
+
+        
+       
+    </script>
+
+
+
+    
+</body>
+</html>

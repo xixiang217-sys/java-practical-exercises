@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        div {
+            height: 50px;
+            width: 200px;
+
+            float: left;
+            margin: 10px;
+
+        }
+
+        .text {
+            height: 50px;
+            width: 200px;
+            border: 1px solid rgb(28, 143, 28);
+        }
+
+        .text1 {
+            height: 50px;
+            width: 75px;
+            border: 1px solid rgb(28, 143, 28);
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="count1">
+        <input type="text" class="text" id="p1">
+    </div>
+    <div id="count2">
+        <select class="text" id="p2">
+            <option value="1">请选择运算符</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+
+        </select>
+
+    </div>
+    <div id="count3">
+        <input type="text" class="text" id="p3">
+
+    </div>
+    <div id="count4" style=" width: 75px;">
+        <input type="button" value="=" class="text1" id="p4">
+
+    </div>
+    <div id="count5">
+        <input type="text" class="text" id="p5">
+
+    </div>
+
+    <script>
+        var count1 = document.getElementById("p1");
+        var count2 = document.getElementById("p2");
+        var count3 = document.getElementById("p3");
+        var count4 = document.getElementById("p4");
+        var count5 = document.getElementById("p5");
+        var number1;
+        
+        var number3;
+
+        count1.onchange = function () {
+            number1 = count1.value;
+
+        }
+       
+           var number2 = count2.value;
+
+        
+        count3.onchange = function () {
+            number3 = count3.value;
+
+        }
+        count4.onclick = function () {
+            if (number2 == '+') {
+                count5.value = parseFloat(number1) + parseFloat(number3);
+            }
+            else if (number2 == '-') {
+                count5.value = parseFloat(number1) - parseFloat(number3);
+            } else if (number2 == '*') {
+                count5.value = parseFloat(number1) * parseFloat(number3);
+            } else if (number2 == '/') {
+                count5.value = parseFloat(number1) / parseFloat(number3);
+            }
+            else if(number2=="1"){
+                count5.value="请输入正确的号";
+            }
+            console.log("结果为："+count5.value);
+
+        }
+    </script>
+
+
+</body>
+
+</html>
