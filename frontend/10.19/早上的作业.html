@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <input type="button" value="获取" id="get">
+    <input type="button" value="清除" id="clear">
+    <table border="1px" id="t"></table>
+
+    
+
+    <script>
+         var t=document.getElementById("t");
+        var g= document.getElementById("get");
+        g.onclick=function(){
+            axios.get("https://mock.apifox.cn/m1/3083103-0-default/emps/list").then(resp=>{
+                var arr=resp.data.data;
+                var str="";
+                 for(var i=0;i<resp.data.data.length;i++){
+                    str+= "<tr><td>"+arr[i].name+"</td></tr>"
+                 }
+                
+                 t.innerHTML=str
+                
+            })
+        
+        }
+        var c=document.getElementById("clear");
+        c.onclick=function(){
+          
+            t.remove();
+        }
+    </script>
+
+    
+</body>
+</html>

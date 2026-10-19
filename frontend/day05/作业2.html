@@ -162,49 +162,42 @@
         var c9=document.getElementById("color9");
         var c10=document.getElementById("color10");
 
-       var arr = [];
-        c1.oninput=function(){
-            arr[0]=this.value;
-        }
-         c2.oninput=function(){
-            arr[1]=this.value;
-        }
-         c3.oninput=function(){
-            arr[2]=this.value;
-        }
-         c4.oninput=function(){
-            arr[3]=this.value;
-        }
-         c5.oninput=function(){
-            arr[4]=this.value;
-        }
-         c6.oninput=function(){
-            arr[5]=this.value;
-        }
-         c7.oninput=function(){
-            arr[6]=this.value;
-        }
-         c8.oninput=function(){
-            arr[7]=this.value;
-        }
-         c9.oninput=function(){
-            arr[8]=this.value;
-        }
-         c10.oninput=function(){
-            arr[9]=this.value;
+        // b) 创建长度为5的数组，名字为 myColor
+        var myColor = new Array(5);
+
+        // 左列5个文本框（显示原始顺序），右列5个文本框（显示降序结果）
+        var leftInputs = [c1, c3, c5, c7, c9];
+        var rightInputs = [c2, c4, c6, c8, c10];
+
+        // c) 设置颜色：利用循环依次弹出5个提示框，把颜色单词存入 myColor 数组
+        var s1 = document.getElementById("sz1");
+        s1.onclick = function () {
+            for (var i = 0; i < myColor.length; i++) {
+                myColor[i] = prompt("输入第" + (i + 1) + "个颜色单词(共5个)");
+            }
         }
 
-        var s2=document.getElementById("sz2");
-        s2.onclick=function(){
-            var str="";
-            for(var i=0;i<arr.length;i++){
-             str=str+arr[i];
-             if(arr[i]){
-                str=str+"&";
-             }
-             
+        // d) 显示颜色：把数组内容依次显示在左列文本框，并弹出用 & 连接的所有颜色
+        var s2 = document.getElementById("sz2");
+        s2.onclick = function () {
+            for (var i = 0; i < leftInputs.length; i++) {
+                leftInputs[i].value = myColor[i];
+            }
+            alert("您输入的颜色有" + myColor.join("&"));
         }
-        
+
+        // e) 颜色排序：按降序排序后，依次显示在右列文本框（复制一份排序，不改动原数组）
+        var s3 = document.getElementById("sz3");
+        s3.onclick = function () {
+            var sorted = [];
+            for (var i = 0; i < myColor.length; i++) {
+                sorted[i] = myColor[i];
+            }
+            sorted.sort();      // 先按字母升序
+            sorted.reverse();   // 再反转得到降序
+            for (var i = 0; i < rightInputs.length; i++) {
+                rightInputs[i].value = sorted[i];
+            }
         }
 
 
